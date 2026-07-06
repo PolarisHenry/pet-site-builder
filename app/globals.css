@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pet-bg text-pet-fg font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-pet-fg;
+  }
+}
+
+/* Custom premium CSS utilities */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.pet-btn-primary {
+  @apply px-6 py-3 rounded-2xl bg-pet-primary text-white font-heading font-semibold shadow-lg shadow-pet-primary/20 hover:shadow-xl hover:shadow-pet-primary/30 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer;
+}
+
+.pet-btn-secondary {
+  @apply px-6 py-3 rounded-2xl border-2 border-pet-primary/20 bg-white/50 text-pet-primary font-heading font-semibold hover:border-pet-primary/40 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer;
+}
+
+.card-hover {
+  @apply hover:-translate-y-2 hover:shadow-2xl hover:shadow-pet-primary/5 transition-all duration-300;
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

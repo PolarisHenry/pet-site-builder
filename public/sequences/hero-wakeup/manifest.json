@@ -1,0 +1,9 @@
+{
+  "action": "yawn",
+  "description": "李多多打哈欠 - Hero Loop 首屏唤醒",
+  "total": 60,
+  "fps": 24,
+  "duration": 2.5,
+  "width": 600,
+  "height": 600
+}

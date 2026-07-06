@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <clipPath id="avatar-clip">
+      <circle cx="100" cy="100" r="95" />
+    </clipPath>
+    <linearGradient id="avatar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="100%" stop-color="#F9C784" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="gold-avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066" />
+      <stop offset="100%" stop-color="#F5D061" />
+    </linearGradient>
+  </defs>
+
+  <!-- Avatar border -->
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#FF8C42" stroke-width="3" />
+  
+  <!-- Main clip container -->
+  <g clip-path="url(#avatar-clip)">
+    <!-- Background -->
+    <rect width="200" height="200" fill="url(#avatar-bg)" />
+    <!-- Ambient circle background -->
+    <circle cx="100" cy="100" r="70" fill="#A0C4FF" opacity="0.15" />
+
+    <!-- Cat Head Close-up -->
+    <g transform="translate(0, 10)">
+      <!-- Main head shape -->
+      <circle cx="100" cy="95" r="50" fill="#FF8C42" />
+      <!-- White snout area -->
+      <path d="M 60 105 C 60 75, 140 75, 140 105 C 140 130, 60 130, 60 105 Z" fill="#FFFFFF" />
+
+      <!-- Left Ear -->
+      <path d="M 65 65 L 50 25 L 85 45 Z" fill="#FF8C42" />
+      <path d="M 67 60 L 56 32 L 80 47 Z" fill="#FFAD73" />
+
+      <!-- Right Ear -->
+      <path d="M 135 65 L 150 25 L 115 45 Z" fill="#FF8C42" />
+      <path d="M 133 60 L 144 32 L 120 47 Z" fill="#FFAD73" />
+
+      <!-- Left Eye -->
+      <ellipse cx="80" cy="85" rx="8" ry="10" fill="#2D3142" />
+      <circle cx="78" cy="81" r="3" fill="#FFFFFF" />
+
+      <!-- Right Eye -->
+      <ellipse cx="120" cy="85" rx="8" ry="10" fill="#2D3142" />
+      <circle cx="118" cy="81" r="3" fill="#FFFFFF" />
+
+      <!-- Nose and Mouth -->
+      <polygon points="97,97 103,97 100,100" fill="#FFAD73" />
+      <path d="M 95 104 Q 100 107 105 104" fill="none" stroke="#2D3142" stroke-width="2" stroke-linecap="round" />
+
+      <!-- Whiskers -->
+      <line x1="55" y1="102" x2="30" y2="100" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" />
+      <line x1="55" y1="108" x2="28" y2="111" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" />
+      <line x1="145" y1="102" x2="170" y2="100" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" />
+      <line x1="145" y1="108" x2="172" y2="111" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" />
+
+      <!-- Red collar with Gold Medal -->
+      <path d="M 75 138 C 85 142, 115 142, 125 138" fill="none" stroke="#D32F2F" stroke-width="6" stroke-linecap="round" />
+      <circle cx="100" cy="148" r="14" fill="url(#gold-avatar-grad)" stroke="#E5A93B" stroke-width="1.5" />
+      <circle cx="100" cy="148" r="4.5" fill="#D4AF37" />
+      <circle cx="95" cy="143" r="2.5" fill="#D4AF37" />
+      <circle cx="100" cy="141" r="2.5" fill="#D4AF37" />
+      <circle cx="105" cy="143" r="2.5" fill="#D4AF37" />
+    </g>
+  </g>
+</svg>
