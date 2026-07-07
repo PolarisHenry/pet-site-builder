@@ -28,3 +28,7 @@ yarn-error.log*
 # System Files
 .DS_Store
 Thumbs.db
+
+# Documentation and Wiki
+docs/
+wiki/
